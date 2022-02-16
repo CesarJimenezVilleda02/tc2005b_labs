@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio 1</title>
-    
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
@@ -14,15 +14,17 @@
         <h3 class="data">ID: A01703517</h3>
         <h3 class="data">pablocesarjimenezvilleda@gmail.com</h3>
     </header>
-    <iframe src="https://cesarjimenez.netlify.app/" style="border: none;  width: 100%; height: 100vh"></iframe>
-    <form>
-        <h2 class="form_title">Formulario de contacto</h2>
-        <label for="email">Ingrese su correo</label>
-        <input type="email" name="email" id="email"><br><br>
-        <label for="asunto">Asunto</label>
-        <input type="text" name="asunto" id="asunto"><br><br>
-        <input type="submit" value="Pedir informes">
-    </form>
+    <iframe src="https://cesarjimenez.netlify.app/"></iframe>
+    <section>
+        <form>
+            <h2 class="form_title">Formulario de contacto</h2>
+            <label for="email">Ingrese su correo</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto"><br><br>
+            <input type="submit" value="Pedir informes">
+        </form>
+    </section>
     <section>
         <h2>Preguntas LAB 1</h2>
         <ul class="collection">
@@ -100,7 +102,23 @@
                 </ul>
             </li>
         </ul>
-        <h2>Preguntas lab 3</h2>
+    </section>
+    <section>
+        <h2>Preguntas LAB 3</h2>
+        <ul class="collection">
+            <li class="collection-item">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de <code>!important</code> en un CSS?&nbsp;
+                <p class="answer">Que se use lo menos posible porque es una mala práctica ya que hace más difícil de depurar el código, pues esta ignora la cascada natural de estilos</p>
+            </li>
+            <li class="collection-item">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?
+                <p class="answer">Esto se debe a que las letras del texto pueden perderse en el fondo debido al color del mismo, igualmente, la resolución de la imagen puede que sea muy poca como para usarse de fondo.</p>
+            </li>
+            <li class="collection-item">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?
+                <p class="answer">La recomendación es usar las unidades px para aquellas medidas que deben de depender de la resolución del dispositivo, unidades como %, em y rem para aquellas medidas que deben de cambiar respecto a la proporción de la pantalla y medidas fijas como pt se deben de usar para mediciones fijas que no deberían de cambiar</p>
+            </li>
+            <li class="collection-item">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+                <p class="answer">Esto se debe a que en un documento podemos poner saltos de línea y espacios para formattear el código y esto puede generar tráfico innecesario para el navegador, minimizarlo nos ayuda a reducir el tamaño dle archivo css eliminando el formato innecesario</p>
+            </li>
+        </ul>
     </section>
     <footer>
         <p>Para la realización de este sitio web se usó el editor <a href="https://code.visualstudio.com/">Visual Studio Code</a></p><br>
