@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 4</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Laboratorio 4: Introducción a JS</h1>
+        <h3 class="data">Pablo César Jiménez Villeda</h3>
+        <h3 class="data">ID: A01703517</h3>
+        <h3 class="data">pablocesarjimenezvilleda@gmail.com</h3>
+    </header>
+    <section>
+        <ul class="collection">
+            <li class="collection-item">¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+                <p class="answer">Java es un lenguaje compilado mientras que JavaScript es un lenguaje interpretado, además Java está orientado a objetos mientras que JavaScript está orientado a prototipos</p>
+            </li>
+            <li class="collection-item"><span style="text-decoration: underline;"></span>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
+                <ul>
+                    <li>
+                        <p class="answer">getFullYear: una vez que se ha creado una instancia este método devuelve el año completo de la fecha.</p>
+                    </li>
+                    <li>
+                        <p class="answer">getMonth: este método retorna el mes de la fecha creada</p>
+                    </li>
+                    <li>
+                        <p class="answer">toString: nos devuelve la fecha y hora en forma de un string</p>
+                    </li>
+                    <li>
+                        <p class="answer">getTime: devuelve los milisegundos transcurridos desde 01/01/1970</p>
+                    </li>
+                    <li>
+                        <p class="answer">getDay: metodo que devuelve el día de la semana de la fecha</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="collection-item">¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
+                <ul>
+                    <li>
+                        <p class="answer">map: método que se utiliza para iterar el arreglo agregando una funcion como argumento que recibe como argumentos el elemento, su índice y el arreglo completo por cada iteración y retorna un nuevo arreglo de los valores que se retornen dentro de la función.</p>
+                    </li>
+                    <li>
+                        <p class="answer">forEach: método que se utiliza para iterar el arreglo que recibe una función al igual que el método map pero que no retorna ningún valor, este método sólo itera el arreglo.</p>
+                    </li>
+                    <li>
+                        <p class="answer">filter: método que se utiliza para filtrar un arreglo, al igual que los dos métodos anteriores recibe una función como argumento que tiene como parametros los mismos que las dos funciones anteriores, este método retorna un arreglo con los elementos para los que la función haya retornado true</p>
+                    </li>
+                    <li>
+                        <p class="answer">sort: método que sirve para ordenar un arreglo, este ordenamiento depende del unicode, sin embargo, si se desea hacer un ordenamiento específico se puede añadir una función de comparación que tiene dos parametros a y b que son los elementos del array que se van a comprarar y dependiendo de si esta devuelve un valor negativo (a menor b) cero (a igual b) o positivo (a mayor b) el algoritmo de ordenamiento interpretará cómo reordenar el arreglo. Este método afecta al algoritmo original.</p>
+                    </li>
+                    <li>
+                        <p class="answer">reduce: método igual a map con la diferencia de que además de una funcion recibe un numero que será el valor inicial de un contador que será pasado a la funcion como primer argumento en cada iteraci´n y será modificado hasta que la función reduce lo retorne al final.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="collection-item">¿Cómo se declara una variable con alcance local dentro de una función? 
+                <p class="answer">Una variable con alcance local del scope de una función se debe declarar dentro de la función y esta se puede declarar de tres formas que siguen la siguiente estructura: var hola = "hola Mundo".<br>Además de var, se puede usar let y const en vez de var con la diferencia de que estas son block scoped, es decir, si se declaran dentro de un if estas no serán accesibles fuera de este if cuando var si lo sería.</p>
+            </li>
+            <li class="collection-item">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+                <p class="answer">Que podríamos afectar partes del código que hacen uso de estas variables y generar errores que serían difíciles de corregir porque en js no se puede elegir si las variables se pasan como referencia o como valor a las funciones, esto dependerá del tipo de dato del valor.</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Solución de problemas</h2>
+        <ul>
+            <li class="collection-item">Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos
+                <div class="answer" id="problemAnswer"></div>
+            </li>
+            <li class="collection-item">Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.
+                <p class="answer" id="problemAnswer"></p>
+            </li>
+            <li class="collection-item">Función: contador. Parámetros: Un arreglo de números. Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0's, y la cantidad de valores mayores a 0 en el arreglo.
+                <p class="answer" id="problemAnswer"></p>
+            </li>
+            <li class="collection-item">Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.
+                <p class="answer" id="problemAnswer"></p>
+            </li>
+            <li class="collection-item">Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.
+                <p class="answer" id="problemAnswer"></p>
+            </li>
+            <li class="collection-item">Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses, alguna problemática que hayas identificado en algún ámbito, un problema de programación que hayas resuelto en otro lenguaje, un problema de la ACM, entre otros). El problema debe estar descrito en un documento HTML, y la solución implementada en JavaScript, utilizando al menos la creación de un objeto, el objeto además de su constructor deben tener al menos 2 métodos. Muestra los resultados en el documento HTML.
+                <p class="answer" id="problemAnswer"></p>
+            </li>
+        </ul>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
