@@ -34,7 +34,7 @@ answers[2].innerHTML = respuesta3;
 // PROBLEMA 4
 const matrix = [[1,2,3,7,19,26],[33,25,14,65,8,7],[4,7,8,6,9,7],[1,35,4,6,18]];
 
-const promedios = (matriz) => matriz.map((arr, i, matrix) => arr.reduce((curr, num) => curr + num,0) / matrix.length);
+const promedios = (matriz) => matriz.map((arr) => arr.reduce((curr, num) => curr + num,0) / arr.length);
 
 const respuesta4 = `Matrix: [[1,2,3,7,19,26],[33,25,14,65,8,7],[4,7,8,6,9,7],[1,35,4,6,18]]<br>Promedios: ` + promedios(matrix).join(', ') + ', respectivamente.';
 answers[3].innerHTML = respuesta4;
