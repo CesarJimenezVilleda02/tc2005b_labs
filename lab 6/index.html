@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+     <nav class="nav-extended">
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Laboratorio 6</a>
+        </div>
+        <div class="nav-content">
+        <span class="nav-title">Validador de contraseñas</span>
+        <h5>Pablo César Jiménez Villeda</h5>
+        <h5>A01703517</h5>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h4 class="">Verifique si su contraseña es correcta</h4>
+            </div>
+            <form class="col s12">
+                <div class="input-field col s6">
+                    <input placeholder="Contraseña" id="password" type="password" class="validate">
+                    <label for="password">Ingrese su contraseña</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Contraseña" id="passwordConfirm" type="password" class="validate">
+                    <label for="passwordConfirm">Valide su contraseña</label>
+                </div>
+                <button id="validate" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                </button>
+                <div class="col s12 banner invalido">Las conteaseñas no coinciden</div>
+            </form>
+        </div>
+
+
+        <div class="row">
+            <h4 class="center-aligned">Venta de productos al mayoreo</h4>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0sBFc5UiIDzEbeJ5ZW-cH4lr179UQud9Hiw&usqp=CAU">
+                    <h3 class="card-title" style="font-size: 40px">$350</h3>
+                    </div>
+                    <div class="card-content">
+                    <h4>Tennis Addidas</h4>
+                    <p>Disfruta del regreso a classes con los nuevos zapatos de nuestra coleccion que te ayudaran a dar 
+                        lo mejor de ti en la cancha
+                    </p>
+                </div>
+                    <div class="card-action">
+                        <input id="Tennis" type="number" value="1" style="width: 100px; height: 30px">
+                    <a id="purchase" data-name="Tennis Addidas" data-price="350" class="waves-effect waves-light btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                    <img src="https://www.record.com.mx/sites/default/files/articulos/2016/07/05/balon_3_050716-1.jpg">
+                    <h3 class="card-title" style="font-size: 40px">$150</h3>
+                    </div>
+                    <div class="card-content">
+                    <h4>Balon conmemorativo</h4>
+                    <p>Recrea tus mejores jugadas en la cnacha con el balon que usaron las estrellas!
+                    </p>
+                </div>
+                    <div class="card-action">
+                        <input id="Balon" type="number" value="1" style="width: 100px; height: 30px">
+                    <a id="purchase" data-name="Balon Conmemorativo" data-price="150" class="waves-effect waves-light btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                    <img src="https://www.record.com.mx/sites/default/files/styles/v2-crop768x433/public/articulos/2021/07/15/e6x3ip4xsaatjtx_1.jpg?itok=M0Ri-8Uz">
+                    <h3 class="card-title" style="font-size: 40px">$180</h3>
+                    </div>
+                    <div class="card-content">
+                    <h4>Camiseta Gallos</h4>
+                    <p>Disfruta del regreso a classes con la nueva camiseta de los gallos de Queretaro. Muestra tu apoto al equipo !
+                    </p>
+                </div>
+                    <div class="card-action">
+                        <input id="Camiseta" type="number" value="1" style="width: 100px; height: 30px">
+                        <a id="purchase" data-name="Camiseta Gallos" data-price="180" class="waves-effect waves-light btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div id="cart" class="row">
+                <h4>Carrito</h4>
+                <div class="row" id="card-items"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Validador de contraseñas</h5>
+                <p class="grey-text text-lighten-4">Validador de passwords de estado del arte</p>
+              </div>
+              <!-- <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://robohash.org/">Look at other cool robots</a></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2022 Validador de contraseñas
+            </div>
+          </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

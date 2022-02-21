@@ -26,7 +26,13 @@ answers[1].innerHTML = contenido;
 // PROBLEMA 3
 const array = [-1,5,0,0,4,-6,1,8,5,9,-10,0,0,28,-19,5,67];
 
-const contador = (array) => `${array.reduce((acum, curr) => curr > 0 ? acum+=1 : acum,0)} numeros positivos<br>${array.reduce((acum, curr) => curr < 0 ? acum+=1 : acum,0)} numeros negativos<br>${array.reduce((acum, curr) => curr == 0 ? acum+=1 : acum,0)} numeros iguales a 0`
+// const contador = (array) => `${array.reduce((acum, curr) => curr > 0 ? acum+=1 : acum,0)} numeros positivos<br>${array.reduce((acum, curr) => curr < 0 ? acum+=1 : acum,0)} numeros negativos<br>${array.reduce((acum, curr) => curr == 0 ? acum+=1 : acum,0)} numeros iguales a 0`
+const contador = (array) =>{ 
+    let respuesta = `${array.reduce((acum, curr) => curr > 0 ? acum+=1 : acum,0)} numeros positivos<br>`;
+    respuesta += `${array.reduce((acum, curr) => curr < 0 ? acum+=1 : acum,0)} numeros negativos<br>`;
+    respuesta +=`${array.reduce((acum, curr) => curr == 0 ? acum+=1 : acum,0)} numeros iguales a 0`
+    return respuesta;
+};
 
 const respuesta3 = `Arreglo del problema: [-1,5,0,0,4,-6,1,8,5,9,-10,0,0,28,-19,5,67]<br>${contador(array)}`;
 answers[2].innerHTML = respuesta3;
