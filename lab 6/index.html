@@ -59,7 +59,7 @@
                     </p>
                 </div>
                     <div class="card-action">
-                        <input id="Tennis" type="number" value="1" style="width: 100px; height: 30px">
+                        <input id="Tennis" type="number" min="1" max="100" value="1" style="width: 100px; height: 30px">
                     <a id="purchase" data-name="Tennis Addidas" data-price="350" class="waves-effect waves-light btn">Comprar</a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                     </p>
                 </div>
                     <div class="card-action">
-                        <input id="Balon" type="number" value="1" style="width: 100px; height: 30px">
+                        <input id="Balon" type="number" min="1" max="100" value="1" style="width: 100px; height: 30px">
                     <a id="purchase" data-name="Balon Conmemorativo" data-price="150" class="waves-effect waves-light btn">Comprar</a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                     </p>
                 </div>
                     <div class="card-action">
-                        <input id="Camiseta" type="number" value="1" style="width: 100px; height: 30px">
+                        <input id="Camiseta" type="number" min="1" max="100" value="1" style="width: 100px; height: 30px">
                         <a id="purchase" data-name="Camiseta Gallos" data-price="180" class="waves-effect waves-light btn">Comprar</a>
                     </div>
                 </div>
@@ -104,7 +104,20 @@
             </div>
         </div>
 
-
+        <div class="preguntas">
+            <h4>Preguntas a responder</h4>
+            <div class="row">
+                <div class="pregunta">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+                    <br><strong>Es una buena práctica porque el usuario podría alterar el html para cambiar las validaciones especificadas en el mismo y esto produciría una vulnerabilidad.</strong>
+                </div>
+                <div class="pregunta">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+                    <br><strong>La seguridad de estas validaciones se puede saltar descativando los scripts en el browser.</strong>
+                </div>
+                <div class="pregunta">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+                    <br><strong>Es una buena practica porque al saltarte estas validaciones bloqueando los scripts muchas de las funciones de la página dejarían de funcionar, por lo que es necesario que el usuario tenga los scripts activados para hacer uso de la aplicación. Por ende, es buena práctica validar usando JS porque eliminamos posibles vulnerabilidades.</strong>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="page-footer">
           <div class="container">

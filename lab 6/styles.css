@@ -3,12 +3,13 @@
 }
 
 .banner {
+    background-color: aquamarine;
     border-radius: 20px;
     margin-top: 30px;
     width: 100%;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     height: 50px
 }
