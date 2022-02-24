@@ -1,0 +1,12 @@
+{
+    "name": "robot_friends",
+    "version": "1.0.0",
+    "description": "The best directory for finding robot friends",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "author": "Pablo César Jiménez Villeda",
+    "license": "ISC"
+}
