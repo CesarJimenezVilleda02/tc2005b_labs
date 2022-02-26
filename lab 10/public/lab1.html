@@ -1,113 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 1</title>
-    
-</head>
-<body>
-    <header>
-        <h1>Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</h1>
-        <h3 class="data">Pablo César Jiménez Villeda</h3>
-        <h3 class="data">ID: A01703517</h3>
-        <h3 class="data">pablocesarjimenezvilleda@gmail.com</h3>
-    </header>
-    <iframe src="https://cesarjimenez.netlify.app/" style="border: none;  width: 100%; height: 100vh"></iframe>
-    <form>
-        <h2 class="form_title">Formulario de contacto</h2>
-        <label for="email">Ingrese su correo</label>
-        <input type="email" name="email" id="email"><br><br>
-        <label for="asunto">Asunto</label>
-        <input type="text" name="asunto" id="asunto"><br><br>
-        <input type="submit" value="Pedir informes">
-    </form>
-    <section>
-        <h2>Preguntas LAB 1</h2>
-        <ul class="collection">
-            <li class="collection-item">¿Cuál es la diferencia entre Internet y la World Wide Web?
-                <p class="answer">El internet es una red de computadores que se encuentran conectadas alrededor de todo el mundo, la World Wide Web es una coleccion de paginas web a las que se accede conectándose a esta red de computadoras. Es decir, la diferencia es que el internet no necesita d ela web para funcionar pero la web si.</p>
-            </li>
-            <li class="collection-item">¿Cuáles son las partes de un URL?
-                <p class="answer">Una url se conforma de un protocolo, dominio, path y parametros. <br>El protocolo es el sistema de reglas que permiten la comunicacion en el internet, el dominio es el nombre único que identifica a un sitio web, el path es la ruta o carpeta del sitio web a la que deseamos acceder y los parametros son informacion especial que se añade a la liga para especificar los parametros que recibira el servidor que reciba nuestra peticion en la ruta especificada.</p>
-            </li>
-            <li class="collection-item">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
-                <ul>
-                    <li>GET: método que se utiliza para pedir un recurso en específico</li>
-                    <li>HEAD: método que solicita los encabezados de pedir cierto recurso</li>
-                    <li>POST: método que se utiiza para enviar datos en el cuerpo del request</li>
-                    <li>PUT: método que se utiliza para reemplazar todas las instancias de un recurso con la carga actual</li>
-                    <li>PATCH: método que se utiliza para actualizar datos almacenados en la nube</li>
-                    <li>DELETE: método que se utiliza para eliminar datos en la nube</li>
-                </ul>
-            </li>
-            <li class="collection-item">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?
-                <p class="answer">El método que se debe utilizar es el de post, ya que este metodo se utiliza para publicar informacion en un sitio. Esto depende de la forma en que se programa la forma.</p>
-            </li>
-            <li class="collection-item">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
-                <p class="answer">El método de HTTP que e usa en este caso es el Get porque se esta solicitando la informacion a una url que va a responder con datos en formato de HTML</p>
-            </li>
-            <li class="collection-item">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
-                <p class="answer">Las respuesta que inician con 200 indican que la peticion fue exitosa y se realizó una operación con éxito por lo que no sucedió ningún error</p>
-            </li>
-            <li class="collection-item">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?
-                <p class="answer">No, porque el error 404 indica que el recurso al que se intenta acceder no existe. Por ende, es el usuario el que debe cambiar su petición</p>
-            </li>
-            <li class="collection-item">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?
-                <p class="answer">Si, esto se debe a que un error con codigo 500 sucede por un eror interno en el servidor, es decir, un error en la programación que es respondabilidad de los desarrolladores</p>
-            </li>
-            <li class="collection-item">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.
-                <p class="answer">Son elementos cuto uso ya no es recomendado porque estos han sido reemplazados por elementos que cumplen con su funcion pero son mejores y los han hecho obsoletos, algunos ejemplos son los elementos acronym, font o center</p>
-            </li>
-            <li class="collection-item">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
-                <p class="answer">La nueva version además de incluir nuevos elementos semánticos, ahora permite incluir elementos multimedia sin necesidad de otras herramientas como Flash y expande el repertorio de tipos de entradas en los formularios. Además HTML5, promueve separar los componentes de esttilo y funcionalidad y ponerlos en otros archivos</p>
-            </li>
-            <li class="collection-item">¿Qué componentes de estructura y estilo tiene una tabla?
-                <p class="answer">Una tabla que creada usando HTML se compone de un elemento table que de forma similar a una lista tiene subelementos, en este caso se usan elementos tr para las filas y dentro de estos se ponene elementos td para cada celda, Alternativamente, en CSS esta estructura se puede crear usando una forma de layout onocida como grid que es especialmente útil para la creacion de layouts responsivos</p>
-            </li>
-            <li class="collection-item">¿Cuáles son los principales controles de una forma HTML5?
-                <p class="answer">Los principales controles d euna forma son los inputs y labels, los inputs pueden cambiar su tipo de entrada usando un atributo type en el elemento el cual puede ser usado para indicar que un campo sera de archivos, texto, telefono, email, url, color, etc. Además se pueden incluir radio buttons, check boxes, rangos y botones uyo tipo uede ser modificado pra alterar una accion de la pagina</p>
-            </li>
-            <li class="collection-item">¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: <a target="_blank" href="http://html5test.com/">http://html5test.com/</a> (Al responder la pregunta recuerda poner el navegador que utilizas)
-                <p class="answer">Actualmente uso Brave Browser el cual usa la version Chrome Dev 98.0.4758.87 y tiene un puntaje de 528 de 555 siendo las funciones más novedosas como web VR las no disponibles</p>
-            </li>
-            <li class="collection-item">
-                <strong>Sobre el ciclo de vida y desarrollo de los sistemas de información:</strong>
-                <ul>
-                    <li class="collection-item">
-                        ¿Cuál es el ciclo de vida de los sistemas de información?
-                        <p class="answer">El ciclo de vida de estos sistema consta de 5 fases:<br>
-                            Nacimiento: surge por la necesidad de un usuario<br>
-                            Desarrollo: se inicia el ciclo de desarrollo<br>
-                            Operación: el sistema ya está terminado y el usuario lo usa<br>
-                            Mantenimiento: consiste en corregir los errores que han surgido en la app<br>
-                            Muerte: deja de ser necesario o es reemplazado por otro mejor<br>
-                        </p>
-                    </li>
-                    <li class="collection-item">
-                        ¿Cuál es el ciclo de desarrollo de sistemas de información?
-                        <p class="answer">El ciclo de desarrollo de estos sistema consiste de 7 fases:<br>
-                            Planeacion: definir elalcance dle proyecto, implementación y metodología<br>
-                            Aálisis: se busca concretar una serie de requisitos<br>
-                            Diseño: identificar soluciones potenciales, evaluarlas y elegir la más conveniente<br>
-                            Desarrollo: inicio de producción y cambio constante en esta etapa<br>
-                            Integración y pruebas: verificación y validación<br>
-                            Implementación: instalación de hardware y software<br>
-                            Mantenimiento: introducir ajustes necesarios<br>
-                        </p>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <h2>Preguntas lab 3</h2>
-    </section>
-    <footer>
-        <p>Para la realización de este sitio web se usó el editor <a href="https://code.visualstudio.com/">Visual Studio Code</a></p><br>
-        <h3>Referencias:</h3>
-        <p class="reference">Ciclo de vida de un sistema de información: fases y componentes. (2022). Retrieved 15 February 2022, from https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/ciclo-de-vida-de-un-sistema-de-informacion-fases-y-componentes</p>
-        <p class="reference">Métodos de petición HTTP - HTTP | MDN. (2022). Retrieved 15 February 2022, from https://developer.mozilla.org/es/docs/Web/HTTP/Methods</p>
-        <p class="reference">Pozas, J. (2019). ¿Cuál es la diferencia entre Internet y la World Wide Web?. Retrieved 15 February 2022, from https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laboratorio 1</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de vida
+                de los sistemas de información
+            </h1>
+            <h3 class="data">Pablo César Jiménez Villeda</h3>
+            <h3 class="data">ID: A01703517</h3>
+            <h3 class="data">pablocesarjimenezvilleda@gmail.com</h3>
+        </header>
+        <iframe
+            src="https://cesarjimenez.netlify.app/"
+            style="border: none; width: 100%; height: 100vh"
+        ></iframe>
+        <form action="/lab1" method="post">
+            <h2 class="form_title">Formulario de contacto</h2>
+            <label for="email">Ingrese su correo</label>
+            <input type="email" name="email" id="email" /><br /><br />
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto" /><br /><br />
+            <input type="submit" value="Pedir informes" />
+        </form>
+        <section>
+            <h2>Preguntas LAB 1</h2>
+            <ul class="collection">
+                <li class="collection-item">
+                    ¿Cuál es la diferencia entre Internet y la World Wide Web?
+                    <p class="answer">
+                        El internet es una red de computadores que se encuentran
+                        conectadas alrededor de todo el mundo, la World Wide Web es una
+                        coleccion de paginas web a las que se accede conectándose a esta
+                        red de computadoras. Es decir, la diferencia es que el internet no
+                        necesita d ela web para funcionar pero la web si.
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Cuáles son las partes de un URL?
+                    <p class="answer">
+                        Una url se conforma de un protocolo, dominio, path y parametros.
+                        <br />El protocolo es el sistema de reglas que permiten la
+                        comunicacion en el internet, el dominio es el nombre único que
+                        identifica a un sitio web, el path es la ruta o carpeta del sitio
+                        web a la que deseamos acceder y los parametros son informacion
+                        especial que se añade a la liga para especificar los parametros
+                        que recibira el servidor que reciba nuestra peticion en la ruta
+                        especificada.
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT,
+                    PATCH, DELETE?
+                    <ul>
+                        <li>
+                            GET: método que se utiliza para pedir un recurso en específico
+                        </li>
+                        <li>
+                            HEAD: método que solicita los encabezados de pedir cierto
+                            recurso
+                        </li>
+                        <li>
+                            POST: método que se utiiza para enviar datos en el cuerpo del
+                            request
+                        </li>
+                        <li>
+                            PUT: método que se utiliza para reemplazar todas las
+                            instancias de un recurso con la carga actual
+                        </li>
+                        <li>
+                            PATCH: método que se utiliza para actualizar datos almacenados
+                            en la nube
+                        </li>
+                        <li>
+                            DELETE: método que se utiliza para eliminar datos en la nube
+                        </li>
+                    </ul>
+                </li>
+                <li class="collection-item">
+                    ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por
+                    ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por
+                    qué?
+                    <p class="answer">
+                        El método que se debe utilizar es el de post, ya que este metodo
+                        se utiliza para publicar informacion en un sitio. Esto depende de
+                        la forma en que se programa la forma.
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Qué método HTTP se utiliza cuando a través de un navegador web se
+                    accede a una página a través de un URL?
+                    <p class="answer">
+                        El método de HTTP que e usa en este caso es el Get porque se esta
+                        solicitando la informacion a una url que va a responder con datos
+                        en formato de HTML
+                    </p>
+                </li>
+                <li class="collection-item">
+                    Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué
+                    significa esto? ¿Ocurrió algún error?
+                    <p class="answer">
+                        Las respuesta que inician con 200 indican que la peticion fue
+                        exitosa y se realizó una operación con éxito por lo que no sucedió
+                        ningún error
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Es responsabilidad del desarrollador corregir un sitio web si un
+                    usuario reporta que intentó acceder al sitio y se encontró con un
+                    error 404? ¿Por qué?
+                    <p class="answer">
+                        No, porque el error 404 indica que el recurso al que se intenta
+                        acceder no existe. Por ende, es el usuario el que debe cambiar su
+                        petición
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Es responsabilidad del desarrollador corregir un sitio web si un
+                    usuario reporta que intentó acceder al sitio y se encontró con un
+                    error 500? ¿Por qué?
+                    <p class="answer">
+                        Si, esto se debe a que un error con codigo 500 sucede por un eror
+                        interno en el servidor, es decir, un error en la programación que
+                        es respondabilidad de los desarrolladores
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado
+                    (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén
+                    desaprobados.
+                    <p class="answer">
+                        Son elementos cuto uso ya no es recomendado porque estos han sido
+                        reemplazados por elementos que cumplen con su funcion pero son
+                        mejores y los han hecho obsoletos, algunos ejemplos son los
+                        elementos acronym, font o center
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+                    <p class="answer">
+                        La nueva version además de incluir nuevos elementos semánticos,
+                        ahora permite incluir elementos multimedia sin necesidad de otras
+                        herramientas como Flash y expande el repertorio de tipos de
+                        entradas en los formularios. Además HTML5, promueve separar los
+                        componentes de esttilo y funcionalidad y ponerlos en otros
+                        archivos
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Qué componentes de estructura y estilo tiene una tabla?
+                    <p class="answer">
+                        Una tabla que creada usando HTML se compone de un elemento table
+                        que de forma similar a una lista tiene subelementos, en este caso
+                        se usan elementos tr para las filas y dentro de estos se ponene
+                        elementos td para cada celda, Alternativamente, en CSS esta
+                        estructura se puede crear usando una forma de layout onocida como
+                        grid que es especialmente útil para la creacion de layouts
+                        responsivos
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Cuáles son los principales controles de una forma HTML5?
+                    <p class="answer">
+                        Los principales controles d euna forma son los inputs y labels,
+                        los inputs pueden cambiar su tipo de entrada usando un atributo
+                        type en el elemento el cual puede ser usado para indicar que un
+                        campo sera de archivos, texto, telefono, email, url, color, etc.
+                        Además se pueden incluir radio buttons, check boxes, rangos y
+                        botones uyo tipo uede ser modificado pra alterar una accion de la
+                        pagina
+                    </p>
+                </li>
+                <li class="collection-item">
+                    ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes
+                    utilizar la siguiente página para descubrirlo:
+                    <a target="_blank" href="http://html5test.com/"
+                        >http://html5test.com/</a
+                    >
+                    (Al responder la pregunta recuerda poner el navegador que utilizas)
+                    <p class="answer">
+                        Actualmente uso Brave Browser el cual usa la version Chrome Dev
+                        98.0.4758.87 y tiene un puntaje de 528 de 555 siendo las funciones
+                        más novedosas como web VR las no disponibles
+                    </p>
+                </li>
+                <li class="collection-item">
+                    <strong
+                        >Sobre el ciclo de vida y desarrollo de los sistemas de
+                        información:</strong
+                    >
+                    <ul>
+                        <li class="collection-item">
+                            ¿Cuál es el ciclo de vida de los sistemas de información?
+                            <p class="answer">
+                                El ciclo de vida de estos sistema consta de 5 fases:<br />
+                                Nacimiento: surge por la necesidad de un usuario<br />
+                                Desarrollo: se inicia el ciclo de desarrollo<br />
+                                Operación: el sistema ya está terminado y el usuario lo
+                                usa<br />
+                                Mantenimiento: consiste en corregir los errores que han
+                                surgido en la app<br />
+                                Muerte: deja de ser necesario o es reemplazado por otro
+                                mejor<br />
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            ¿Cuál es el ciclo de desarrollo de sistemas de información?
+                            <p class="answer">
+                                El ciclo de desarrollo de estos sistema consiste de 7
+                                fases:<br />
+                                Planeacion: definir elalcance dle proyecto, implementación
+                                y metodología<br />
+                                Aálisis: se busca concretar una serie de requisitos<br />
+                                Diseño: identificar soluciones potenciales, evaluarlas y
+                                elegir la más conveniente<br />
+                                Desarrollo: inicio de producción y cambio constante en
+                                esta etapa<br />
+                                Integración y pruebas: verificación y validación<br />
+                                Implementación: instalación de hardware y software<br />
+                                Mantenimiento: introducir ajustes necesarios<br />
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Preguntas lab 3</h2>
+        </section>
+        <footer>
+            <p>
+                Para la realización de este sitio web se usó el editor
+                <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+            </p>
+            <br />
+            <h3>Referencias:</h3>
+            <p class="reference">
+                Ciclo de vida de un sistema de información: fases y componentes. (2022).
+                Retrieved 15 February 2022, from
+                https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/ciclo-de-vida-de-un-sistema-de-informacion-fases-y-componentes
+            </p>
+            <p class="reference">
+                Métodos de petición HTTP - HTTP | MDN. (2022). Retrieved 15 February 2022,
+                from https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+            </p>
+            <p class="reference">
+                Pozas, J. (2019). ¿Cuál es la diferencia entre Internet y la World Wide
+                Web?. Retrieved 15 February 2022, from
+                https://cio.com.mx/cual-es-la-diferencia-entre-internet-y-la-world-wide-web/
+            </p>
+        </footer>
+    </body>
 </html>
