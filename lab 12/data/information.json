@@ -1,0 +1,5 @@
+[
+    { "id": 1, "email": "cesar@gmail.com", "asunto": "Quiero ser chido" },
+    { "email": "A01703517@itesm.mx", "asunto": "quiero verte miamor", "id": 2 },
+    { "email": "cesar@gmail.com", "asunto": "miamor", "action": "", "id": 3 }
+]
