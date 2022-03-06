@@ -16,4 +16,8 @@ router.get('/', (req, res, next) => {
     });
 });
 
+router.get('/preguntas', (req, res, next) => {
+    res.render('preguntas.ejs');
+});
+
 module.exports = router;
