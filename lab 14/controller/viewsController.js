@@ -13,7 +13,3 @@ exports.getOverview = (req, res, next) => {
         requests: req.information,
     });
 };
-
-exports.getPreguntas = (req, res, next) => {
-    res.render('preguntas.ejs');
-};
