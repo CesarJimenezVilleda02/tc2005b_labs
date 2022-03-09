@@ -1,12 +1,20 @@
 const express = require('express');
 const fs = require('fs');
 
-const { injectInformation, getOverview } = require('../controller/viewsController');
+const {
+    checkLogin,
+    injectInformation,
+    getOverview,
+    getPreguntas,
+    getLogin,
+} = require('../controller/viewsController');
 
 const router = express.Router();
 
-router.use(injectInformation);
+router.get('/login', getLogin);
 
-router.get('/', getOverview);
+router.use(injectInformation);
+router.get('/', checkLogin, getOverview);
+router.get('/preguntas', getPreguntas);
 
 module.exports = router;

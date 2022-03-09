@@ -1,0 +1,13 @@
+<%- include('includes/head.ejs'); -%> <%- include('includes/navbar.ejs'); -%>
+<div class="row">
+    <form class="col s12" action="/api/user/login" method="POST">
+        <div class="input-field col s12">
+            <input placeholder="Nombre" name="name" id="name" type="text" required />
+            <label for="name">Ingrese su nombre para acceder</label>
+        </div>
+        <button id="validate" class="btn waves-effect waves-light" type="submit">
+            Aceptar
+        </button>
+    </form>
+</div>
+<%-include('includes/footer.ejs'); -%>

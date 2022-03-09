@@ -1,4 +1,3 @@
-const fs = require('fs');
 const Robofriend = require('../model/robofriendsModel');
 
 exports.injectRobofriends = (req, res, next) => {
@@ -18,13 +17,7 @@ exports.getRobofriends = (req, res, next) => {
 exports.postRobofriend = (req, res, next) => {
     const newRobofriend = new Robofriend(req.body.name, req.body.bio, req.body.picture);
     Robofriend.postRobot(newRobofriend);
-    res.status(200).json({
-        status: 'success',
-        message: 'Data updated on server',
-        data: {
-            newRobofriend,
-        },
-    });
+    res.redirect('/');
 };
 
 exports.getRobofriend = (req, res, next) => {

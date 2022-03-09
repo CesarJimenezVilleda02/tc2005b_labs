@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 class Information {
-    constructor(email, asunto) {
-        (this.email = email), (this.asunto = asunto);
+    constructor(name = 'Anonimo', email, asunto) {
+        (this.email = email), (this.asunto = asunto), (this.name = name);
         this.id =
             JSON.parse(fs.readFileSync(`${__dirname}/../data/information.json`)).length +
             1;

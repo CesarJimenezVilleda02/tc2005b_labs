@@ -1,7 +1,7 @@
 <%- include('includes/head.ejs'); -%> <%- include('includes/navbar.ejs'); -%>
 <div class="row">
     <h4 class="black-text">Registrese para obtener un lugar en la cola</h4>
-    <form class="col s12" action="/api/information/" method="post">
+    <form class="col s12" action="/api/information" method="POST">
         <div class="input-field col s6">
             <input placeholder="Email" name="email" id="email" type="email" required />
             <label for="email">Ingrese su email</label>
@@ -21,19 +21,21 @@
     </form>
     <div class="row">
         <h4 class="black-text">Asuntos pendientes</h4>
-        <h5 class="col s4">Lugar</h5>
-        <h5 class="col s4">Correo</h5>
-        <h5 class="col s4">Asunto</h5>
+        <h5 class="col s3">Lugar</h5>
+        <h5 class="col s3">Correo</h5>
+        <h5 class="col s3">Asunto</h5>
+        <h5 class="col s3">Nombre</h5>
         <% for (let request of requests) { %>
         <div class="row">
-            <p class="col s4"><%= request.id %></p>
-            <p class="col s4"><%= request.email %></p>
-            <p class="col s4"><%= request.asunto %></p>
+            <p class="col s3"><%= request.id %></p>
+            <p class="col s3"><%= request.email %></p>
+            <p class="col s3"><%= request.asunto %></p>
+            <p class="col s3"><%= request.name %></p>
         </div>
         <% } %>
     </div>
     <h4 class="black-text">Registrese como un robofriend</h4>
-    <form class="col s12" action="/api/robofriends/" method="post">
+    <form class="col s12" action="/api/robofriends/" method="POST">
         <div class="input-field col s6">
             <input placeholder="Nombre" name="name" id="name" type="text" required />
             <label for="name">Ingrese su nombre</label>

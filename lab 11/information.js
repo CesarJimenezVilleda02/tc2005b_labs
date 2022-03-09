@@ -25,13 +25,7 @@ router
             `${__dirname}/data/information.json`,
             JSON.stringify(req.information)
         );
-        res.status(200).json({
-            status: 'success',
-            message: 'Data updated on server',
-            data: {
-                information: req.information,
-            },
-        });
+        res.redirect('/')
     });
 
 router.route('/:id').get((req, res, next) => {

@@ -16,15 +16,9 @@ exports.getRequests = (req, res, next) => {
 };
 
 exports.postRequest = (req, res, next) => {
-    const newReq = new Information(req.body.email, req.body.asunto);
+    const newReq = new Information(req.session.name, req.body.email, req.body.asunto);
     Information.postReq(newReq);
-    res.status(200).json({
-        status: 'success',
-        message: 'Data updated on server',
-        data: {
-            newReq,
-        },
-    });
+    res.redirect('/');
 };
 
 exports.getRequest = (req, res, next) => {
