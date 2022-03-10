@@ -2,10 +2,10 @@
 <h1>Preguntas</h1>
 <ul class="collection">
     <li class="collection-item">
-        <h4>¿Qué beneficios encuentras en el estilo MVC?</h4>
-        <p>Es más sencillo agregaar nuevos tipos de datos y fucionalidades ya que son independientes del funcionamiento de otras capas. Además creaa independencia y facilita el mantenimiento de la aplicación.</p>
-        <h4>¿Encuentras alguna desventaja en el estilo arquitectónico MVC?</h4>
-        <p>Le agrega complejidad al sistema, los archivos que se deben mantener y desarrollar incrementany la curva de aprendizaje del patrón es grande.</p>
+        <h4>¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?</h4>
+        <p>Es más sencillo agregar nuevos metodos estaticos que ejecuten querys de sql mientras mantenemos la estructura MVC, donde todo lo referente a los datos se mantiene en el modelo.</p>
+        <h4>¿Qué es SQL injection y cómo se puede prevenir?</h4>
+        <p>Estos ataques consisten en escribir codigo de sql en el body de las peticiones de datos, basicamente, se basa en infiltrar querys. Para evitar esto debemos validar el codigo que recibimos así como los inputs.</p>
     </li>
 </ul>
 <%-include('includes/footer.ejs'); -%>
