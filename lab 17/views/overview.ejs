@@ -1,0 +1,95 @@
+<%- include('includes/head.ejs'); -%> <%- include('includes/navbar.ejs'); -%>
+<div class="row">
+    <h4 class="black-text">Registrese para obtener un lugar en la cola</h4>
+    <form class="col s12" action="/api/information" method="POST">
+        <div class="input-field col s6">
+            <input placeholder="Email" name="email" id="email" type="email" required />
+            <label for="email">Ingrese su email</label>
+        </div>
+        <div class="input-field col s6">
+            <input placeholder="Asunto" name="asunto" id="text" type="text" required />
+            <label for="text">En que lo podemos ayudar?</label>
+        </div>
+        <button
+            id="validate"
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+        >
+            Enviar solicitud
+        </button>
+    </form>
+    <div class="row">
+        <h4 class="black-text">Asuntos pendientes</h4>
+        <h5 class="col s3">Lugar</h5>
+        <h5 class="col s3">Correo</h5>
+        <h5 class="col s3">Asunto</h5>
+        <h5 class="col s3">Nombre</h5>
+        <% for (let request of requests) { %>
+        <div class="row">
+            <p class="col s3"><%= request.id %></p>
+            <p class="col s3"><%= request.email %></p>
+            <p class="col s3"><%= request.asunto %></p>
+            <p class="col s3"><%= request.name %></p>
+        </div>
+        <% } %>
+    </div>
+    <h4 class="black-text">Registrese como un robofriend</h4>
+    <form class="col s12" action="/api/robofriends/" method="POST">
+        <div class="input-field col s6">
+            <input placeholder="Nombre" name="name" id="name" type="text" required />
+            <label for="name">Ingrese su nombre</label>
+        </div>
+        <div class="input-field col s6">
+            <input
+                placeholder="hdakjdh"
+                name="string"
+                id="image"
+                type="text"
+                value="hjahdkjsh"
+                required
+            />
+            <label for="image">Inserte una cadena para generar su avatar</label>
+        </div>
+        <div class="input-field col s12">
+            <input placeholder="Bio" name="bio" id="bio" type="text" required />
+            <label for="bio">Ingrese informacion sobre usted</label>
+        </div>
+        <button
+            id="validate"
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+        >
+            Generar Robofriend
+        </button>
+    </form>
+    <div class="row">
+        <% for (let robofriend of robofriends) { %>
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img
+                        src="https://robohash.org/<%= robofriend.picture %>"
+                        height="400px"
+                    />
+                    <span class="card-title" style="color: black"
+                        ><%= robofriend.name %>
+                    </span>
+                </div>
+                <div class="card-content">
+                    <p><%= robofriend.bio %></p>
+                </div>
+                <div class="card-action">
+                    <a
+                        href="https://robohash.org/<%= robofriend.picture %>"
+                        target="blank"
+                        >Mira mi imagen</a
+                    >
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+<%-include('includes/footer.ejs'); -%>
