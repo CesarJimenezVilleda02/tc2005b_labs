@@ -1,0 +1,5 @@
+Rutas de login, signUp y logout
+https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/blob/master/controllers/authenticationController.js
+
+Modelo del usuario 
+https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/blob/master/models/userModel.js
