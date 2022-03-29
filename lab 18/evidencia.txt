@@ -3,3 +3,9 @@ https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/bl
 
 Modelo del usuario 
 https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/blob/master/models/userModel.js
+
+¿Qué otras formas de autentificación existen?
+--> OTP: One Time Password
+--> Biométrica
+--> Certificado PKI
+--> RFID ó definición sin contacto

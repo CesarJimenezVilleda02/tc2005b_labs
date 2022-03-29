@@ -4,3 +4,18 @@ https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/bl
 MIDDLEWARE restrictTo
 https://github.com/CesarJimenezVilleda02/Natours-Server-side-rendered-website/blob/master/controllers/authenticationController.js
 
+PREGUNTAS A RESPONDER:
+¿En qué consiste el control de acceso basado en roles?
+El control de acceso basado en roles consiste en la restricción de ciertas funciones para el usuario dependiendo de su rol 
+y los permisos dentro de la aplicación que este les de.
+
+Investiguen y describan 2 sistemas, uno que aplique RBAC y uno que no. Realicen un análisis de las ventajas y desventajas de cada uno 
+con respecto al control de acceso.
+AUTH 0:
+---> Es un sistema que implementa un sistema basado en scopes quedefinen los permisos de un usuario
+-----> Se puede implementar rápidamente en un sistema
+-----> No presenta la complejidad de un modelo RBAC 
+AZURE RBAC
+---> Es la implementación de RBAC de Azure que provee Microsoft como servicio
+---> Cuenta con las funciones más complejas del RBAC
+---> Es costoso y difícil de implementar
