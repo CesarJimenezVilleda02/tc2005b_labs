@@ -1,0 +1,20 @@
+Laboratorio 28 Triggers
+
+Ariann Fernando Arriaga Alcántara A01703556
+Pablo César Jiménez Villeda A01703517
+
+Trigger 1
+
+CREATE TRIGGER `after_materiales_insert` AFTER INSERT ON `materiales` FOR EACH ROW 
+INSERT INTO auditoria_materiales VALUES (DEFAULT, "Prueba")
+
+Trigger 2
+
+CREATE TRIGGER `after_materiales11_insert` BEFORE INSERT ON `materiales` FOR EACH ROW 
+INSERT INTO auditoria_materiales VALUES(DEFAULT, New.descripcion)
+
+Trigger 3
+
+CREATE TRIGGER `after_cliente_update` AFTER UPDATE ON `clientes` FOR EACH ROW 
+INSERT INTO auditoria_clientes VALUES (DEFAULT, CONCAT("Se ha actualizado", new.Nombre_Completo))
+
